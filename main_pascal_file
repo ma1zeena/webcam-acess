@@ -1,0 +1,42 @@
+//code of webcam button & internet acess
+//www.ma1zeena.com
+//don't change nothing under this line
+
+project WebCamAcess;
+
+var webcam, conection, retry, server, inject, error, IP:Conection, cmd_code : string
+
+(APP UTILS)
+
+begin
+writeln('Welcome to webcam acess');
+writeln('wanna try conection?');
+writeln('click here to connect');
+readln(conection);
+IF VAR CONECTION SUCESS, CONTINUE LINE@23 THEN;
+writeln('conecting...');
+writeln('error !');
+writeln('probably, check your internet conection');
+writeln('wanna retry?');
+readln(retry);
+ELSE IF CONECTION SUCESS, THEN;
+writeln('conecting...');
+readln(conection);
+writeln('sucess, continue...');
+writeln('testing server');
+readln(server);
+writeln('sucess');
+writen('injecting codes...')
+readln(inject);
+writeln('injection sucess');
+writeln('finished, u are on !)
+writeln('click here to copy your adrress');
+readln(IP:Conection:get:cmd_code);
+writeln('your IP is: ');
+readln(IP:Conection:showIP:cmd_code);
+writeln('wanna turn on webcam?');
+writeln('click here to turn on/off');
+readln(webcam)
+end@user
+end.
+
